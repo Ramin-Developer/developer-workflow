@@ -90,3 +90,37 @@ _NCrunch_*
 *.slxc
 *.mat
 *.fig
+
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# -------------------------
+# Node.js / JavaScript / TypeScript
+# -------------------------
+node_modules/
+dist/
+build/
+.next/
+.nuxt/
+.parcel-cache/
+.turbo/
+.eslintcache
+
+# -------------------------
+# Java / JVM
+# -------------------------
+target/
+.gradle/
+*.class
