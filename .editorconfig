@@ -257,4 +257,20 @@ dotnet_naming_style._fieldname.required_suffix =
 dotnet_naming_style._fieldname.word_separator = 
 dotnet_naming_style._fieldname.capitalization = camel_case
 
+# LaTeX files
+[*.{tex,latex,bib}]
+indent_style = space
+indent_size = 2
+tab_width = 2
+trim_trailing_whitespace = false
+insert_final_newline = true
+
+# MATLAB files
+[*.m]
+indent_style = space
+indent_size = 2
+tab_width = 2
+trim_trailing_whitespace = true
+insert_final_newline = true
+
 [*.{cs,vb}]
