@@ -1,0 +1,89 @@
+# Shared Git ignore template for this workflow repository
+# This file is intended to be copied into other repositories and adapted as needed.
+# It includes common rules for:
+# - general OS/editor noise
+# - .NET/C# projects
+# - LaTeX documents
+# - MATLAB/Octave projects
+
+# -------------------------
+# OS files
+# -------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# -------------------------
+# Editors and IDEs
+# -------------------------
+.vs/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# -------------------------
+# .NET / C# projects
+# -------------------------
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Ll]og/
+[Ll]ogs/
+TestResults/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.nupkg
+*.snupkg
+packages/
+artifacts/
+coverage*.xml
+coverage*.info
+*.coverage
+*.coveragexml
+BenchmarkDotNet.Artifacts/
+_NCrunch_*
+*.DotSettings.user
+
+# -------------------------
+# LaTeX / PDF build artifacts
+# -------------------------
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.xdv
+*.nav
+*.snm
+*.vrb
+
+# -------------------------
+# MATLAB / Octave
+# -------------------------
+*.asv
+*.m~
+*.slx.autosave
+*.slxc
+*.mat
+*.fig
