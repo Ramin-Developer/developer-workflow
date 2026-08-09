@@ -29,3 +29,7 @@ cp developer-workflow/.editorconfig ./your-project/.editorconfig
 ## Current contents
 
 - .editorconfig — shared formatting and whitespace rules
+
+## Next steps
+
+This repository is intended to be reused as a top-level workflow standard across future public projects and existing repositories.
