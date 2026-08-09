@@ -28,8 +28,6 @@ cp developer-workflow/.editorconfig ./your-project/.editorconfig
 cp developer-workflow/.gitignore ./your-project/.gitignore
 ```
 
-The old standalone `gitignore` repository is being retired in favor of this single shared source.
-
 ## Current contents
 
 - .editorconfig — shared formatting and whitespace rules for C#, F#, LaTeX, and MATLAB repositories
