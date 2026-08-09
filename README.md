@@ -14,6 +14,7 @@ Use this repository as a shared source of truth for:
 - editor configuration
 - formatting and whitespace rules
 - reusable project setup guidance
+- shared ignore rules for different repository types
 
 ## Using the shared editor config
 
@@ -29,6 +30,7 @@ cp developer-workflow/.editorconfig ./your-project/.editorconfig
 ## Current contents
 
 - .editorconfig — shared formatting and whitespace rules
+- .gitignore — shared ignore rules for .NET/C#, LaTeX, and MATLAB repositories
 
 ## Next steps
 

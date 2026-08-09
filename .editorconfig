@@ -16,14 +16,12 @@ dotnet_diagnostic.IDE0005.severity = suggestion  # Remove unnecessary usings (ID
 dotnet_diagnostic.IDE0065.severity = warning     # Using directive placement
 dotnet_diagnostic.IDE0161.severity = warning     # Use file-scoped namespace
 
-#### Core EditorConfig Options ####
+####### Core EditorConfig Options ####
 
-# Indentation and spacing
+# Global formatting defaults
 indent_size = 4
 indent_style = space
 tab_width = 4
-
-# New line preferences
 end_of_line = crlf
 insert_final_newline = false
 trim_trailing_whitespace = true
@@ -226,40 +224,39 @@ dotnet_naming_rule.private_or_internal_field_should_be__fieldname.style = _field
 
 dotnet_naming_symbols.interface.applicable_kinds = interface
 dotnet_naming_symbols.interface.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
-dotnet_naming_symbols.interface.required_modifiers = 
+dotnet_naming_symbols.interface.required_modifiers =
 
 dotnet_naming_symbols.private_or_internal_field.applicable_kinds = field
 dotnet_naming_symbols.private_or_internal_field.applicable_accessibilities = internal, private, private_protected
-dotnet_naming_symbols.private_or_internal_field.required_modifiers = 
+dotnet_naming_symbols.private_or_internal_field.required_modifiers =
 
 dotnet_naming_symbols.types.applicable_kinds = class, struct, interface, enum
 dotnet_naming_symbols.types.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
-dotnet_naming_symbols.types.required_modifiers = 
+dotnet_naming_symbols.types.required_modifiers =
 
 dotnet_naming_symbols.non_field_members.applicable_kinds = property, event, method
 dotnet_naming_symbols.non_field_members.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
-dotnet_naming_symbols.non_field_members.required_modifiers = 
+dotnet_naming_symbols.non_field_members.required_modifiers =
 
 # Naming styles
 
-dotnet_naming_style.pascal_case.required_prefix = 
-dotnet_naming_style.pascal_case.required_suffix = 
-dotnet_naming_style.pascal_case.word_separator = 
+dotnet_naming_style.pascal_case.required_prefix =
+dotnet_naming_style.pascal_case.required_suffix =
+dotnet_naming_style.pascal_case.word_separator =
 dotnet_naming_style.pascal_case.capitalization = pascal_case
 
 dotnet_naming_style.begins_with_i.required_prefix = I
-dotnet_naming_style.begins_with_i.required_suffix = 
-dotnet_naming_style.begins_with_i.word_separator = 
+dotnet_naming_style.begins_with_i.required_suffix =
+dotnet_naming_style.begins_with_i.word_separator =
 dotnet_naming_style.begins_with_i.capitalization = pascal_case
 
 dotnet_naming_style._fieldname.required_prefix = _
-dotnet_naming_style._fieldname.required_suffix = 
-dotnet_naming_style._fieldname.word_separator = 
+dotnet_naming_style._fieldname.required_suffix =
+dotnet_naming_style._fieldname.word_separator =
 dotnet_naming_style._fieldname.capitalization = camel_case
 
 # LaTeX files
 [*.{tex,latex,bib}]
-indent_style = space
 indent_size = 2
 tab_width = 2
 trim_trailing_whitespace = false
@@ -267,10 +264,17 @@ insert_final_newline = true
 
 # MATLAB files
 [*.m]
-indent_style = space
 indent_size = 2
 tab_width = 2
 trim_trailing_whitespace = true
 insert_final_newline = true
+
+# F# files
+[*.fs]
+indent_size = 4
+indent_style = space
+tab_width = 4
+insert_final_newline = true
+trim_trailing_whitespace = true
 
 [*.{cs,vb}]
