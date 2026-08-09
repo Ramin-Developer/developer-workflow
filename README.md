@@ -16,21 +16,24 @@ Use this repository as a shared source of truth for:
 - reusable project setup guidance
 - shared ignore rules for different repository types
 
-## Using the shared editor config
+## Using the shared templates
 
-Copy the .editorconfig file from this repository into other projects when you want the same formatting and whitespace conventions.
+Copy `.editorconfig` and `.gitignore` from this repository into other projects when you want the same formatting, whitespace, and ignore conventions.
 
 Example:
 
 ```bash
 git clone https://github.com/Ramin-Developer/developer-workflow.git
 cp developer-workflow/.editorconfig ./your-project/.editorconfig
+cp developer-workflow/.gitignore ./your-project/.gitignore
 ```
+
+The old standalone `gitignore` repository is being retired in favor of this single shared source.
 
 ## Current contents
 
-- .editorconfig — shared formatting and whitespace rules
-- .gitignore — shared ignore rules for .NET/C#, LaTeX, and MATLAB repositories
+- .editorconfig — shared formatting and whitespace rules for C#, F#, LaTeX, and MATLAB repositories
+- .gitignore — shared ignore rules for .NET/C#, F#, LaTeX, MATLAB, and common tooling artifacts
 
 ## Next steps
 
