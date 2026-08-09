@@ -29,7 +29,7 @@ $RECYCLE.BIN/
 *~
 
 # -------------------------
-# .NET / C# projects
+# .NET / C# and F# projects
 # -------------------------
 [Bb]in/
 [Oo]bj/
@@ -58,6 +58,9 @@ coverage*.info
 BenchmarkDotNet.Artifacts/
 _NCrunch_*
 *.DotSettings.user
+*.fsx.locked
+*.fsproj.user
+*.fsharplint
 
 # -------------------------
 # LaTeX / PDF build artifacts
