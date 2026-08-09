@@ -80,6 +80,7 @@ _NCrunch_*
 *.nav
 *.snm
 *.vrb
+*.pdf
 
 # -------------------------
 # MATLAB / Octave
