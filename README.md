@@ -16,23 +16,39 @@ Use this repository as a shared source of truth for:
 - reusable project setup guidance
 - shared ignore rules for different repository types
 
-## Using the shared templates
+## Canonical configuration
 
-Copy `.editorconfig` and `.gitignore` from this repository into other projects when you want the same formatting, whitespace, and ignore conventions.
+The root `.editorconfig` and `.gitignore` files are the canonical copies for the repositories listed in
+`config-repositories.txt`. Root copies in those repositories must remain byte-for-byte identical to these
+files.
 
-Example:
+Nested `.editorconfig` files are allowed only for narrowly scoped analyzer overrides. They must inherit from the root
+file and must not set `root = true`. Nested `.gitignore` files should be avoided because root ignore patterns apply
+recursively.
 
-```bash
-git clone https://github.com/Ramin-Developer/developer-workflow.git
-cp developer-workflow/.editorconfig ./your-project/.editorconfig
-cp developer-workflow/.gitignore ./your-project/.gitignore
+Check for drift without changing files:
+
+```powershell
+./scripts/Sync-RepositoryConfig.ps1 -Check
 ```
+
+Synchronize all listed local repositories:
+
+```powershell
+./scripts/Sync-RepositoryConfig.ps1
+```
+
+Use `-RepositoriesRoot` when sibling clones are stored outside the parent directory of this repository.
+Synchronization stops if a target root configuration file has uncommitted changes. Use `-Force` only when those
+changes are intentionally being replaced.
 
 ## Current contents
 
 - .editorconfig — shared formatting and whitespace rules for C#, F#, LaTeX, and MATLAB repositories
 - .gitignore — shared ignore rules for .NET/C#, F#, LaTeX, MATLAB, and common tooling artifacts
+- config-repositories.txt — repositories governed by the canonical root files
+- scripts/Sync-RepositoryConfig.ps1 — configuration drift checker and synchronizer
 
 ## Next steps
 
-This repository is intended to be reused as a top-level workflow standard across future public projects and existing repositories.
+Add new repositories to `config-repositories.txt` when they adopt the shared root configuration.
