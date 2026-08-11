@@ -22,6 +22,11 @@ The root `.editorconfig` and `.gitignore` files are the canonical copies for the
 `config-repositories.txt`. Root copies in those repositories must remain byte-for-byte identical to these
 files.
 
+The `.vscode/settings.json` file is a portable baseline for editor behavior. Merge its shared settings into each
+repository's workspace settings instead of replacing the file, because repositories may require project-specific
+formatter, build, or extension configuration. Keep fonts, themes, machine paths, credentials, and personal workflow
+preferences in VS Code User Settings.
+
 Nested `.editorconfig` files are allowed only for narrowly scoped analyzer overrides. They must inherit from the root
 file and must not set `root = true`. Nested `.gitignore` files should be avoided because root ignore patterns apply
 recursively.
@@ -46,6 +51,7 @@ changes are intentionally being replaced.
 
 - .editorconfig — shared formatting and whitespace rules for C#, F#, LaTeX, and MATLAB repositories
 - .gitignore — shared ignore rules for .NET/C#, F#, LaTeX, MATLAB, and common tooling artifacts
+- .vscode/settings.json — portable VS Code wrapping, whitespace, and language editor defaults
 - config-repositories.txt — repositories governed by the canonical root files
 - scripts/Sync-RepositoryConfig.ps1 — configuration drift checker and synchronizer
 

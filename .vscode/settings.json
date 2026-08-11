@@ -1,0 +1,30 @@
+{
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [120],
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 120,
+  "editor.wrappingIndent": "same",
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "rewrap.autoWrap.enabled": false,
+  "rewrap.doubleSentenceSpacing": false,
+  "rewrap.wrappingColumn": 120,
+  "cSpell.enabled": true,
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+  "[latex]": {
+    "editor.rulers": [120],
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 120,
+    "editor.wrappingIndent": "same"
+  },
+  "[matlab]": {
+    "editor.insertSpaces": true,
+    "editor.rulers": [120],
+    "editor.tabSize": 4,
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 120
+  }
+}
